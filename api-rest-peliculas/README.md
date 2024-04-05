@@ -5,7 +5,7 @@ API REST hecha con Spring Boot.
 *Para probar este programa debera implementar un script el cual estara adjunto con los archivos como 'script.sql'. Este archivo te creara la base de datos e implementara la tabla y todas las peliculas.*
 
 ```
-CREATE DATABASE IF NOT EXISTS peliculas;
+CREATE DATABASE IF NOT EXISTS peliculasdb;
 
 USE peliculasdb;
 

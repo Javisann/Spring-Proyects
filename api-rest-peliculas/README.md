@@ -9,18 +9,18 @@ CREATE DATABASE IF NOT EXISTS peliculasdb;
 
 USE peliculasdb;
 
-CREATE TABLE pelicula (
+CREATE TABLE peliculas (
     id BIGINT NOT NULL AUTO_INCREMENT,
-    actores VARCHAR(255),
+    titulo VARCHAR(255),
+    genero VARCHAR(255),
     agno INTEGER,
     director VARCHAR(255),
-    genero VARCHAR(255),
-    titulo VARCHAR(255),
+    actores VARCHAR(255),
     PRIMARY KEY (id)
 );
 
 LOAD DATA INFILE "ruta/peliculas.csv"
-INTO TABLE pelicula
+INTO TABLE peliculas
 FIELDS TERMINATED BY ';'
 IGNORE 1 ROWS
 (titulo, genero, agno, director, actores);
